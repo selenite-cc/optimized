@@ -1,8 +1,9 @@
+let currentver = "v1.0.0";
+var ver;
 getCDN();
 function loadGames() {
   $("#backarrow").hide();
   $.getJSON(cdnurl + "/games.json", function (data) {
-    gamelist = data;
     for (let i = 0; i < data.length; i++) {
       let $element = $("<div>")
         .prop({
@@ -45,6 +46,7 @@ function exitGame() {
 }
 var cdnurl;
 async function getCDN() {
+  checkVer();
   $.getJSON(
     "https://raw.githubusercontent.com/skysthelimitt/selenite-optimized/main/links.json",
     async function (data) {
@@ -68,4 +70,14 @@ async function getCDN() {
       }
     }
   );
+}
+async function checkVer() {
+  var checkver = await fetch("https://raw.githubusercontent.com/skysthelimitt/selenite-optimized/main/ver");
+  var ver = await checkver.text();
+  if (!ver.startsWith(currentver)) {
+    if (confirm("Your Selenite Optimized version is currently out of date. Click OK to update, or click cancel to continue.")
+    ){
+      window.location.replace("https://raw.githubusercontent.com/skysthelimitt/selenite-optimized/main/build/bookmark.txt");
+    }
+  }
 }
