@@ -1,6 +1,9 @@
-let currentver = "v1.0.0";
+let currentver = "v1.0.1";
 var ver;
 getCDN();
+$.get("https://raw.githubusercontent.com/skysthelimitt/selenite-optimized/main/activelink", function(data) {
+  $("#gametitle").text("sry for this website being so bad, ill work on it eventually - current working link: " + data)
+})
 function loadGames() {
   $("#backarrow").hide();
   $.getJSON(cdnurl + "/games.json", function (data) {
