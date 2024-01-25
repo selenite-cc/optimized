@@ -1,4 +1,4 @@
-let currentver = "v1.0.1";
+let currentver = "v1.0.2";
 var ver;
 getCDN();
 $.get("https://raw.githubusercontent.com/skysthelimitt/selenite-optimized/main/activelink", function(data) {
