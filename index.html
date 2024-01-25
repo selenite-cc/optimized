@@ -47,7 +47,7 @@
         games.forEach(function(game) {
             var title = game.querySelector('h1').textContent.toLowerCase();
             if (title.includes(filter)) {
-                game.style.display = 'block';
+                game.style.display = 'inline-block';
             } else {
                 game.style.display = 'none';
             }
