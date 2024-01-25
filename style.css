@@ -1,11 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/prompt');
+body {
+    margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--textcolor);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+font-family: 'Prompt', sans-serif;
+    --inputbg: #3c096c;
+    --inputborder: #5a189a;
+  font-weight:300;
+    --uibg: #240046;
+    --textcolor: #fff;
+    --bg: #10002b;
+}
 .game {
-    width: 13%;
-    display: inline-block;
-    background-color: black;
-    padding: 1%;
-    border-radius: 10%;
-    margin: 2%;
-    transition-duration: 0.5s;
+      width: 15%;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: var(--uibg);
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 5px var(--uibg);
   }
   
   .game:hover {
@@ -13,12 +31,18 @@
   }
   
   .game h1 {
-    font-size: 0.85em;
-    color: white;
+    font-size: 12px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+    color:var(--textcolor)
   }
   .game img {
-    width: 100%;
-    aspect-ratio: 1/1;
+width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 1 / 1;
+
   }
 
   iframe {
