@@ -12,6 +12,25 @@
 <body>
     <center>
     <h1>All Games</h1>
+        <div>
+            <script>
+    document.getElementById('searchBar').addEventListener('input', function() {
+        var filter = this.value.toLowerCase();
+        var games = document.getElementsByClassName('game');
+
+        for (var i = 0; i < games.length; i++) {
+            var gameTitle = games[i].getElementsByTagName('h1')[0].innerText.toLowerCase();
+            
+            if (gameTitle.includes(filter)) {
+                games[i].style.display = '';
+            } else {
+                games[i].style.display = 'none';
+            }
+        }
+    });
+</script>
+    <input type="text" id="searchBar" placeholder="Search for a game...">
+</div>
         <div id="adcontainer">
         <script type="text/javascript">
           atOptions = {
