@@ -74,6 +74,14 @@ async function getCDN() {
     }
   );
 }
+document.addEventListener("DOMContentLoaded", function () {
+	if(document.querySelectorAll('[id=adcontainer]')) {
+		for(let i = 0; i < document.querySelectorAll('[id=adcontainer]').length; i++) {
+			if(Math.random() < 0.5 || localStorage.getItem("selenite.adblock") == "true")
+			document.querySelectorAll('[id=adcontainer]')[i].innerHTML = "";
+		}
+	}
+
 async function checkVer() {
   var checkver = await fetch("https://raw.githubusercontent.com/skysthelimitt/selenite-optimized/main/ver");
   var ver = await checkver.text();
