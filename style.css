@@ -59,7 +59,9 @@ text-decoration:underline;
 }
 a:hover {
 color:var(--textcolor);
+    text-shadow: 2px 2px 6px var(--textcolor);
 }
+
 .modal-content {
 background:var(--uibg)
 }
