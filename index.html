@@ -1,16 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--[if lt IE 8]>
+    <link href="ie7.css" rel="stylesheet">
+<![endif]-->
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script>
+cssVars({
+  rootElement: document
+});
+        </script>
+    <script src="jquery1.js"></script>
+    <script src="bootstrap3.js"></script>
+        <link rel="stylesheet" href="bootstrap3.css">
+    <script src="jquery3.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="svgpolyfill.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="json2.js"></script>
+    <script src="jquery2.js"></script>
+    <script src="json3.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@master/ie11CustomProperties.js"></script>
+        <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3415518411898563" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/webp-hero@0.0.2/dist-cjs/polyfills.js"></script>
+<script src="https://unpkg.com/webp-hero@0.0.2/dist-cjs/webp-hero.bundle.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Selenite - Minimal</title>
 </head>
 <body>
-    <div id="title">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Back_Arrow.svg" style="cursor: pointer;" id="backarrow" onclick="exitGame()">
+    <center>
+    <h1>All Games</h1><br>
+        <div>
+    <input type="text" id="searchBar" placeholder="Search for a game...">
+</div><br>
+               <div id="adcontainer">
+            <a class="ad" data-toggle="modal" data-target="#myModal">AD: (click here to read more)</a>
+        <script type="text/javascript">
+          atOptions = {
+            'key' : 'a4e483c304d8788fbb3f86d0fccd7dd2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/a4e483c304d8788fbb3f86d0fccd7dd2/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+  </center>
+    <div id="title">    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/White_arrow_square_1.png" width="20px" height="20px" style="cursor: pointer;" id="backarrow" onclick="exitGame()">
         <span id="gametitle"></span>
     </div>
+    <center>
     <div id="games"></div>
+        </center>
+          <div id="adcontainer">
+              <a class="ad" data-toggle="modal" data-target="#myModal">AD: (click here to read more)</a>
+        <script async="async" data-cfasync="false" src="//pl22225360.toprevenuegate.com/92108816b5da54426d1639bcbfb5785c/invoke.js"></script>
+        <div id="container-92108816b5da54426d1639bcbfb5785c"></div>
+      </div>
+      <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">What happened? Why does Selenite have ads?</h4>
+        </div>
+        <div class="modal-body">
+          <p>After a lot of thinking, I have decided that the best course of action for Selenite is to add ads. I have spent a lot of time to make sure they are the least intrusive on your experience while still allowing me to make a profit off of the website. This decision was not out of greed or anything, it was because I can't expand Selenite past a certain point without a guaranteed income, and I can't do that solely off of donations.
+<br><br>
+Ads are powered by Adsterra, and we use the 728x90 banner ads and the Native banners, with erotic ads enabled.
+<br><br>
+There is still an option to disable ads. You can also use an adblocker (which I HIGHLY recommend).
+
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="localStorage.setItem('selenite.adblock', 'true')" class="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+    <script>
+      document.getElementById('searchBar').addEventListener('input', function() {
+        var filter = this.value.toLowerCase();
+        var games = document.querySelectorAll('.game');
+
+        games.forEach(function(game) {
+            var title = game.querySelector('h1').textContent.toLowerCase();
+            if (title.includes(filter)) {
+                game.style.display = 'inline-block';
+            } else {
+                game.style.display = 'none';
+            }
+        });
+    });
+</script>
 </body>
 </html>
